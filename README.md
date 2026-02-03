@@ -7,4 +7,6 @@
     - ? to increment if previous cell which is one of the types of neighbor cells and the current cell are equal else decrement
     - / does the same as ? but if not equal
     - ; does the same as ? but to the next neighbor cell
+    - /# to clear cell to zero
+
     - : does the same as / but for the next neighbor cell
