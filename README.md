@@ -8,6 +8,10 @@
     - / does the same as ? but if not equal
     - ; does the same as ? but to the next neighbor cell
     - \# to clear cell to zero
-
+    - * increments current cell by previous neighbor
+    - & decrements current cell by previous neighbor
+    - ^ increments current cell by next neighbor
+    - % increments current cell by previous neighbor   
     - : does the same as / but for the next neighbor cell
+
 
