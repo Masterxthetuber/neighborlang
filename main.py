@@ -56,6 +56,17 @@ while 0 <= ip < len(program):
         else:
             tape[pointer] -= 1
             print(tape)
+    elif oper == "*":
+        tape[pointer] += tape[pointer - 1]
+        print(tape)
+    elif oper == "&":
+        tape[pointer] += tape[pointer + 1]
+        print(tape)
+    elif oper == "^":
+        tape[pointer] -= tape[pointer - 1]
+        print(tape)
+    elif oper == "%":
+        tape[pointer] -= tape[pointer + 1]
     else:
         raise ValueError("invalid")
     ip += 1
