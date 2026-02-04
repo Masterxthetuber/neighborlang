@@ -2,6 +2,7 @@ tape = [0] * 16
 pointer = 0
 program = []
 ip = 0
+ret = None
 '''
 start of loop
 '''
@@ -9,8 +10,14 @@ while 0 <= ip < len(program):
     oper = program[ip]
     #goto
     if isinstance(oper, int):
+        ret = ip + 1
         ip = oper
         continue
+    elif oper == "r":
+        if ret != None:
+            ip = ret
+            continue
+        pass
     #standard stuff
     elif oper == ">":
         pointer += 1
