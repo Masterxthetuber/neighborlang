@@ -13,8 +13,8 @@
     - ^ increments current cell by next neighbor
     - % increments current cell by previous neighbor   
     - : does the same as / but for the next neighbor cell
-*also to goto and instruction you just enter the index number so lets say program is this
-">", "+", 0 it will loop till error*
+    - if the operation is an int it will goto the index of the program element for example if you had lets say 3 your would go to the 4th element of program
+    - r does a return countinuing to the next operation after the goto
 
 
 
